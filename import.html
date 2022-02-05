@@ -11,14 +11,11 @@
     <script defer src="script.js"></script>
   </head>
 
-  <body onload="renderLists()">
-    <a href="import.html">Upload</a>
+  <body>
+    <a href="index.html">Pick</a>
     <h1>Random Name Picker</h1>
-    <input type="button" onclick="pickRandomName()" value="Pick Name" />
-    <input type="button" onclick="reset()" value="Reset" />
-    <h2>Random Name</h2>
-    <p id="available"></p>
-    <h2>Previous Picks</h2>
-    <p id="picked"></p>
+    <input type="file" id="file" />
+    <input type="button" onclick="importNamesFromFile()" value="Import File" />
+    <p id="feedback"></p>
   </body>
 </html>
